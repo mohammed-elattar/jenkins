@@ -6,6 +6,7 @@ services:
       context: .
     volumes:
       - '$PWD/jenkins-data:/var/jenkins_home'
+      - '$PWD/tmp:/tmp'
       - '$PWD/jenkins-docker-certs:/certs/client:ro'
     ports:
       - 8080:8080
